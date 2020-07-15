@@ -1,0 +1,45 @@
+.preview{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+
+}
+.item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:50%;
+    height:350px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    &:hover{
+     opacity: 0.8;   
+    }
+}
+
+.item-info{
+    width: 50%;
+    height: 5%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.item-name{
+    width: 60%;
+}
+.item-price{
+    text-align: right;
+    width: 40%;
+}
