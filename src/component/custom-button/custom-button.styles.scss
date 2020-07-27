@@ -1,0 +1,26 @@
+.custom-button{
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    bottom: 300px;
+    right: 47%;
+    position: flex;
+
+    &:hover{
+        background-color: rgb(0, 143, 255);
+        color: black;
+        border: 1px solid black;
+    }
+
+
+    &.isShopping{
+        margin-top: 20px;
+    }
+}

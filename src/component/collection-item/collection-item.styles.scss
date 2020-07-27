@@ -1,0 +1,23 @@
+.collection-item{
+    text-align: center;
+    width: 100%;
+    .collection{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .image{
+        display: inline-block;
+        height:45vh;
+        max-height: 650px;
+    }
+    .content{
+        font-size:60px;
+    }
+    .ingredient{
+        font-size: 30px;
+        font-family: 'Roboto Slab', serif;
+    }
+}

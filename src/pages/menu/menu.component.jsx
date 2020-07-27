@@ -1,11 +1,11 @@
 import React from 'react';
 
-import MenuList from '../../component/menu-list/menu-list.component';
+import CollectionOverview from '../../component/collection-overview/collection-overview.component';
 
 const MenuPage = () => {
     return(
     <div className='menu'>
-        <MenuList/>
+        <CollectionOverview/>
     </div>
     );
 }
