@@ -1,16 +1,14 @@
-// .menu-item{
-//     width:100%;
-//     justify-content: space-between;
-//     }
+.menu{
+    width:100%;
+
+    .menu-item{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
 
 
-//     .shop-menu{
-//         width: 25%;
-//         background-repeat: no-repeat;
-//         background-size: cover;
-//         &:hover {
-//             cursor: pointer;
-//     }
 
     
 //     .burgers{

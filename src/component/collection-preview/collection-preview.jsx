@@ -1,12 +1,10 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import Menu from '../../assets/menu-fergburger-wall.jpg';
-
 import './collection-preview.styles.scss';
 
 const CollectionPreiview = ({ title, items, history, match }) => (
-    <div className='collection-preview' style={{backgroundImage : `url(${Menu})`}}>
+    <div className='collection-preview' >
         <h2 className='title'>{title.toUpperCase()}</h2>
         <div className='preview'>
             {items.map(item => (

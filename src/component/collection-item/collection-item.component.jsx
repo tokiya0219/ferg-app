@@ -19,7 +19,7 @@ const CollectionItem = ({ match }) => {
                         <h1 className='content'>{name}</h1>
                         <h1 className='content'>{price}NZD</h1>
                         <h3 className='ingredient'>{ingredient}</h3>
-                        { ableToCustomSauce ? <SelectSauce/> : ''}
+                        {ableToCustomSauce ? <SelectSauce/> : ''}
                         {ableToCustomCheese ? <SelectCheese/> : ''}
                         <CustomButton isShopping>Grab me!!</CustomButton>
                     </div>
