@@ -1,43 +1,25 @@
-import React from 'react';
+import React, {useContext} from 'react';
+
+import { MainPicContext } from '../../provider/main-pic-provider.component'
 
 import './main-pic.styles.scss';
 
-class MainPic extends React.Component{
-    constructor(props){
-        super(props);
-
-        this.handleMouseHover = this.handleMouseHover.bind(this);
-        this.state = {
-            isHovering: false,
-        };
-    }
-
-    handleMouseHover() {
-        this.setState(this.toggleHoverState);
-    }
-
-    toggleHoverState(state) {
-        return {
-            isHovering: !state.isHovering
-        };
-    }
-
-    render(){
+const MainPic = () => {
+    const {isHovering, handleMouseHover} = useContext(MainPicContext)
     return (
         <div>
             <div className='main-pic'
-            onMouseEnter={this.handleMouseHover}
-            onMouseOut={this.handleMouseHover}
+            onMouseEnter={handleMouseHover}
+            onMouseOut={handleMouseHover}
             >
             {
-                this.state.isHovering &&
+                isHovering &&
                 <h1 className='header'>Ferg Loves You</h1>
             }
             </div>
         </div>
     );
     }
-}
 
 
 export default MainPic;

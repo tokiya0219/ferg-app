@@ -3,12 +3,11 @@ import { Route, Switch } from 'react-router-dom';
 
 import HomePage from './pages/homepage/homepage.component';
 import Header from './component/header/header.component';
-// import ShopPage from './pages/shop/shop.component';
 
 import './App.css';
-import CollectionOverview from './component/collection-overview/collection-overview.component';
+import MenuPage from './pages/menu/menu.component';
 import CollectionItem from './component/collection-item/collection-item.component';
-// import CollectionPage from './pages/collection/collection.component';
+import CheckOut from './pages/checkout/checkout.component';
 
 function App() {
   return (
@@ -16,8 +15,9 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route exact path='/menu' component={CollectionOverview} />
+        <Route exact path='/menu' component={MenuPage} />
         <Route path='/menu/:itemKey' component={CollectionItem} />
+        <Route path='/checkout' component={CheckOut} />
       </Switch>
     </div>
   );

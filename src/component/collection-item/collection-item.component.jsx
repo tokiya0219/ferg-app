@@ -17,7 +17,7 @@ const CollectionItem = ({ match }) => {
                     <div className='collection'>
                         <img className='image' alt='' src={`${imageUrl}`}></img>
                         <h1 className='content'>{name}</h1>
-                        <h1 className='content'>{price}NZD</h1>
+                        <h1 className='price'>{price}NZD</h1>
                         <h3 className='ingredient'>{ingredient}</h3>
                         {ableToCustomSauce ? <SelectSauce/> : ''}
                         {ableToCustomCheese ? <SelectCheese/> : ''}

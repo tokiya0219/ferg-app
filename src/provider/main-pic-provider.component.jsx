@@ -1,19 +1,19 @@
 import React, { useState, createContext } from 'react';
 
-export const MainPicContext = () => createContext({
+export const MainPicContext = createContext({
     isHovering: false,
-    handleMouseHover: () => {},
+    handleMouseHover: () => {}
 });
 
-const MainPicProvider = ({children}) => {
+const MainPicProvider = ({ children }) => {
     const [isHovering, setIsHovering] = useState(false);
     const handleMouseHover = () => setIsHovering(!isHovering);
 
     return(
-        <MainPicProvider
+        <MainPicContext.Provider
         value={{handleMouseHover, isHovering}}>
             {children}
-        </MainPicProvider>
+        </MainPicContext.Provider>
     )
 
 }
