@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 
-import { MainPicContext } from '../../provider/main-pic-provider.component'
+import { MainPicContext } from '../../provider/main-pic-provider/main-pic-provider.component'
 
 import './main-pic.styles.scss';
 
