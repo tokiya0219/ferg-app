@@ -23,73 +23,27 @@ const ITEM_DATA ={
             price: 11.90,
             ingredient: 'Prime N.Z. beef, lettuce, tomato, red onion, aioli & tomato relish',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
-            ],
-            ableToCustomSauce: [
-                {
-                    label: 'Tomato relish',
-                    value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
-            ],
+                    'Cheddar',
+                    'Blue',
+                    'Brie',
+                    'Swiss',
+                    'no cheese'
+                ],
+                optionCheese:[],
+                optionSauce:[],
+                ableToCustomSauce: [
+                    'Tomato relish',
+                    'Aioli',
+                    'BBQ',
+                    'Mango',
+                    'Raita',
+                    'Sweet chili',
+                    'Mastard',
+                    'Tomato sauce',
+                    'Tartar',
+                    'Taragon',
+                    'no-sauce'
+                ],
         },
         withCheese:
         {
@@ -100,72 +54,26 @@ const ITEM_DATA ={
             price: 12.90,
             ingredient: 'Prime N.Z. beef, lettuce, tomato, red onion, aioli & tomato relish + your choice of cheese',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
+            optionCheese:[],
+            optionSauce:[],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         AL:
@@ -177,72 +85,26 @@ const ITEM_DATA ={
             price: 18.50,
             ingredient: 'Al delivers a double serving of Prime New Zealand beef(3/4lb), lashings of bacon, a whole lotta cheese, 2eggs, beetroot, lettuce, tomato, red onion, relish & a big wad of aioli.',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
+            optionCheese:[],
+            optionSauce:[],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         Mr:
@@ -254,72 +116,24 @@ const ITEM_DATA ={
             price: 16.90,
             ingredient: '3/4lb of Prime N.Z. beef, Cheddar cheese, streaky bacon, BBQ souse, lettuce, tomato, red onions & aioli',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         TS:
@@ -331,72 +145,26 @@ const ITEM_DATA ={
             price: 14.90,
             ingredient: 'Prime N.Z. beef, streaky bacon, Cheddar cheese, grilled pineapple, lettuce, tomato, red onion, aioli & tomato relish',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
+            optionCheese:[],
+            optionSauce:[],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         SS:
@@ -408,72 +176,26 @@ const ITEM_DATA ={
             price: 13.90,
             ingredient: 'Prime N.Z. beef, streaky bacon, avocado, lettuce, tomato, red onion, aioli & tomato relish',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
+            optionCheese:[],
+            optionSauce:[],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         BE:
@@ -485,72 +207,26 @@ const ITEM_DATA ={
             price: 18.90,
             ingredient: 'Prime N.Z. Ribeye steak(200gm) grilled middium, topped with grilled caramelised white onion, your choice of cheese, lettuce, tomato, aioli & tomato relish',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
+            optionCheese:[],
+            optionSauce:[],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         CW:
@@ -562,72 +238,26 @@ const ITEM_DATA ={
             price: 14.90,
             ingredient: 'Slow roasted pork belly, lettuce, tomato, red onion, hash brown, aioli & apricot seeded mustard',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
+            optionCheese:[],
+            optionSauce:[],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         COD:
@@ -639,72 +269,28 @@ const ITEM_DATA ={
             price: 14.90,
             ingredient: "South Coast Blue Cod, tempura batter, Ferg's dill tartare, lettuce, tomato, aioli & tomato relish",
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'select-cheese',
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
+            optionCheese:[],
+            optionSauce:[],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'default',
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         Tofu:
@@ -716,72 +302,26 @@ const ITEM_DATA ={
             price: 12.90,
             ingredient: 'Tempura tofu, spicy satay, coconut & coriander sauce, lettuce, tomato, red onion, cucumber, avocado, snowpea shoots & aioli',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
+            optionCheese:[],
+            optionSauce:[],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         Lafel:
@@ -793,72 +333,26 @@ const ITEM_DATA ={
             price: 12.90,
             ingredient: 'Falafel patties dressed with lemon yoghurt & chipotle chilli sauce, lettuce, tomato, red onion, cucumber, avocado & aioli',
             ableToCustomCheese: [
-                {
-                    label: 'Cheddar',
-                    value: 'Cheddar'
-                },
-                {
-                    label: 'Blue',
-                    value: 'Blue'
-                },
-                {
-                    label: 'Brie',
-                    value: 'Brie'
-                },
-                {
-                    label: 'Swiss',
-                    value: 'Swiss'
-                },
-                {
-                    label: 'no cheese',
-                    value: 'no cheese'
-                }
+                'Cheddar',
+                'Blue',
+                'Brie',
+                'Swiss',
+                'no cheese'
             ],
+            optionCheese:[],
+            optionSauce:[],
             ableToCustomSauce: [
-                {
-                label: 'Tomato relish',
-                value: 'Tomato relish'
-                },
-                {
-                    label: 'Aioli',
-                    value: 'Aioli'
-                },
-                {
-                    label: 'BBQ',
-                    value: 'BBQ'
-                },
-                {
-                    label: 'Mango',
-                    value: 'Mango'
-                },
-                {
-                    label: 'Raita',
-                    value: 'Raita'
-                },
-                {
-                    label: 'Sweet chili',
-                    value: 'Sweet chili'
-                },
-                {
-                    label: 'Mastard',
-                    value: 'Mastard'
-                },
-                {
-                    label: 'Tomato sauce',
-                    value: 'Tomato sauce'
-                },
-                {
-                    label: 'Tartar',
-                    value: 'Tartar'
-                },
-                {
-                    label: 'Taragon',
-                    value: 'Taragon'
-                },
-                {
-                    label: 'no-sauce',
-                    value: 'no-sauce'
-                }
+                'Tomato relish',
+                'Aioli',
+                'BBQ',
+                'Mango',
+                'Raita',
+                'Sweet chili',
+                'Mastard',
+                'Tomato sauce',
+                'Tartar',
+                'Taragon',
+                'no-sauce'
             ],
         },
         fries:
@@ -870,27 +364,13 @@ const ITEM_DATA ={
                 price: 4.50,
                 ingredient: 'aioli, wasabi mayonnaise, tomato sauce, BBQ or sweet chilli',
                 ableToCustomCheese: [],
+                optionSauce:[],
                 ableToCustomSauce: [
-                    {
-                        label: 'Aioli',
-                        value: 'Aioli'
-                    },
-                    {
-                        label: 'Sweet chili',
-                        value: 'Sweet chili'
-                    },
-                    {
-                        label: 'Tomato sauce',
-                        value: 'Tomato sauce'
-                    },
-                    {
-                        label: 'BBQ',
-                        value: 'BBQ'
-                    },
-                    {
-                        label: 'no-sauce',
-                        value: 'no-sauce'
-                    },
+                    'Aioli',
+                    'Sweet chili',
+                    'Tomato sauce',
+                    'BBQ',
+                    'no-sauce'
                 ],
         },
         Onion:

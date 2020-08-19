@@ -1,19 +1,19 @@
 import React, {useState, createContext} from 'react';
 
 export const SelectContext = createContext({
-   cheese: {},
+   cheese: '',
    selectedCheese: () => {},
-   sauce: {},
+   sauce: '',
    selectedSauce: () => {}
 }) 
 
 const SelectProvider = ({children}) => {
-    const [cheese, setCheese] = useState({value: 'Cheddar'});
-    const [sauce, setSauce] = useState({value: 'default'});
+    const [cheese, setCheese] = useState('Cheddar');
+    const [sauce, setSauce] = useState('Tomato Relish');
 
 
-    const selectedCheese = (e) => setCheese({value: e.target.value});
-    const selectedSauce = (e) => setSauce({value: e.target.value});
+    const selectedCheese = (e) => setCheese(e.target.value);
+    const selectedSauce = (e) => setSauce(e.target.value);
 
     return(
     <SelectContext.Provider
