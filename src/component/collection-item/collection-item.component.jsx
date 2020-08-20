@@ -1,9 +1,7 @@
 import React, { useContext } from 'react';
 
-import CustomSelect from '../custom-select/custom-select.component';
 import CustomButton from '../custom-button/custom-button.component';
 import { CartContext } from '../../provider/cart-provider/cart-provider';
-import { SelectContext } from '../../provider/select-provider/select-provider';
 
 import ItemsContext from '../../context/item/item.context';
 
@@ -19,6 +17,22 @@ const CollectionItem = ({ match }) => {
         optionSauce.push(sauce);
         addItem(collectionItem);
     }
+    function saucePushFunc(){
+        optionSauce.push(sauce);
+        addItem(collectionItem);
+    }
+    function itemPushFunc() {
+        addItem(collectionItem)
+    }
+    let hoverAction;
+    if(optionCheese && optionCheese) {
+        hoverAction = pushFunc;
+    } else if (optionSauce) {
+        hoverAction = saucePushFunc;
+    } else{
+        hoverAction = itemPushFunc;
+    }
+    
     return(
                 <div className='collection-item' key={key}>
                     <div className='collection'>
@@ -48,7 +62,7 @@ const CollectionItem = ({ match }) => {
                                 ''
                             }
                         </form>
-                        <CustomButton isShopping onClick={() => pushFunc()}>Grab me!!</CustomButton>
+                        <CustomButton isShopping onClick={() => hoverAction(collectionItem)}>Grab me!!</CustomButton>
                     </div>
                 </div>
             );
