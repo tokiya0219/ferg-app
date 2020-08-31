@@ -37,3 +37,8 @@ export const getCartItemCount = cartItems => cartItems.reduce(
   (accumalatedQuantity, cartItem) => accumalatedQuantity + cartItem.quantity,
   0
 );
+
+export const getCartItemPrice = cartItems => cartItems.reduce(
+  (accumalatedPrice, cartItem) => accumalatedPrice + cartItem.price * cartItem.quantity,
+  0
+)

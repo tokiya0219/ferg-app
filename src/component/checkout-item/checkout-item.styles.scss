@@ -6,43 +6,46 @@
     max-height:160px;
     .img-container{
         width:15%; 
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
         .image{
-            height:140px;
-            // max-height:160px;
+        height:140px;
+        max-width: 180px;
+
         }
     }
-    .name{
-        margin-right: 20px;
-    }
     .name,
-    .cheese,
-    .sauce,
-    .price{
-        width:15%;
-        margin-top: 65px;
-        font-size: 25px;
-    }
-    
+    .price,
     .quantity{
         width:15%;
         margin-top: 65px;
-        display:flex;
-    .emoji{
-        font-size: 20px;
-        cursor:pointer;
-        font-family: sans-serif;
-    }
-    .value{
-        font-size: 30px;
-        margin: 0 15px;
+        font-size: 25px;
+        margin-right: auto;
+        margin-left: auto;
         }
+    .cheese-list,
+    .sauce-list{
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        width:15%;
+        overflow: auto;
+    }
+    .cheese,
+    .sauce{
+        font-size: 25px;
+    }
+    .selected-item{
+        font-size: 20px;
+        list-style: none;
+        border-bottom: solid rgb(226, 223, 223) 1px;
     }
     .delete-icon{
         width: 5%;
         margin-top: 70px;
         font-size: 20px;
+        margin-right: auto;
+        margin-left: auto;
         cursor: pointer;
     }
 }

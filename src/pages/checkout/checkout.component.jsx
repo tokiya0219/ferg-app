@@ -1,13 +1,14 @@
 import React, {useContext} from 'react';
 
 import CheckoutItem from '../../component/checkout-item/checkout-item.component';
+import CustomButton from '../../component/custom-button/custom-button.component';
 
 import { CartContext } from '../../provider/cart-provider/cart-provider';
 
 import './checkout.styles.scss';
 
 const CheckOut = () => {
-    const { cartItems } = useContext(CartContext);
+    const { cartItems, totalPrice, cartItemsCount } = useContext(CartContext);
     return(
         <div className='check-out'>
             <div>
@@ -29,6 +30,11 @@ const CheckOut = () => {
             ) : (
                 <div className='empty-message'>Your cart is empty</div>
             )}
+            <div className='total'>
+                <span className='total-amount'>{cartItemsCount} items</span>
+                <span className='total-price'>Total price is {totalPrice}$</span>
+            </div>
+            <CustomButton isCheckingout onClick={() => alert('your order has been accepted')}>checkout now</CustomButton>
         </div>
     )
 }

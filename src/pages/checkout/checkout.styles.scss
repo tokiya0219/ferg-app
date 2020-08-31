@@ -20,6 +20,8 @@
         .amount,
         .price{
             width: 15%;
+            margin-left: auto;
+            margin-right: auto;
         }
         .delete-tag{
             width:5%;
@@ -30,5 +32,14 @@
         text-align: center;
         display: absolute;
         margin-top: 10vh;
+    }
+    .total{
+        font-size: 30px;
+        text-align: right;
+        padding-right: 10%;
+        padding-top:20px
+    }
+    .total-price{
+        padding-left: 20px;
     }
 }

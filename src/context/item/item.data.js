@@ -3,7 +3,6 @@ import BullsEye from '../../assets/bulls-eye.jpg';
 import BIGAL from '../../assets/BIGAL.jpg';
 import COD from '../../assets/COD.jpg';
 import Ferg from '../../assets/ferg-burger.jpg';
-import FergCheese from '../../assets/fergcheese.jpg';
 import Fries from '../../assets/fries.jpg';
 import Lafel from '../../assets/lafel.jpg';
 import Onion from '../../assets/onion.jpg';
@@ -23,377 +22,352 @@ const ITEM_DATA ={
             price: 11.90,
             ingredient: 'Prime N.Z. beef, lettuce, tomato, red onion, aioli & tomato relish',
             ableToCustomCheese: [
-                    'Cheddar',
-                    'Blue',
-                    'Brie',
-                    'Swiss',
-                    'no cheese'
-                ],
-                optionCheese:[],
-                optionSauce:[],
-                ableToCustomSauce: [
-                    'Tomato relish',
-                    'Aioli',
-                    'BBQ',
-                    'Mango',
-                    'Raita',
-                    'Sweet chili',
-                    'Mastard',
-                    'Tomato sauce',
-                    'Tartar',
-                    'Taragon',
-                    'no-sauce'
-                ],
-        },
-        withCheese:
-        {
-            id: 2,
-            name: 'The Fergburger + select of cheese',
-            key:'withCheese',
-            imageUrl: FergCheese,
-            price: 12.90,
-            ingredient: 'Prime N.Z. beef, lettuce, tomato, red onion, aioli & tomato relish + your choice of cheese',
-            ableToCustomCheese: [
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
-            optionCheese:[],
-            optionSauce:[],
             ableToCustomSauce: [
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionSauce:[],
+            optionCheese:[]
         },
         AL:
         {
-            id: 3,
+            id: 2,
             name: 'BIG AL',
             key: 'AL',
             imageUrl: BIGAL,
             price: 18.50,
             ingredient: 'Al delivers a double serving of Prime New Zealand beef(3/4lb), lashings of bacon, a whole lotta cheese, 2eggs, beetroot, lettuce, tomato, red onion, relish & a big wad of aioli.',
             ableToCustomCheese: [
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
-            optionCheese:[],
-            optionSauce:[],
             ableToCustomSauce: [
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionCheese:[],
+            optionSauce:[],
         },
         Mr:
         {
-            id: 4,
+            id: 3,
             name: 'Mr. Big Stuff',
             key: 'Mr',
             imageUrl: MrBigStuff,
             price: 16.90,
             ingredient: '3/4lb of Prime N.Z. beef, Cheddar cheese, streaky bacon, BBQ souse, lettuce, tomato, red onions & aioli',
             ableToCustomCheese: [
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
             ableToCustomSauce: [
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionCheese:[],
+            optionSauce:[],
         },
         TS:
         {
-            id:5,
+            id:4,
             name: 'Tropical Swine',
             key: 'TS',
             imageUrl: Tropi,
             price: 14.90,
             ingredient: 'Prime N.Z. beef, streaky bacon, Cheddar cheese, grilled pineapple, lettuce, tomato, red onion, aioli & tomato relish',
             ableToCustomCheese: [
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
-            optionCheese:[],
-            optionSauce:[],
             ableToCustomSauce: [
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionCheese:[],
+            optionSauce:[],
         },
         SS:
         {
-            id:6,
+            id:5,
             name: 'Southern Swine',
             key: 'SS',
             imageUrl: Southern,
             price: 13.90,
             ingredient: 'Prime N.Z. beef, streaky bacon, avocado, lettuce, tomato, red onion, aioli & tomato relish',
             ableToCustomCheese: [
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
-            optionCheese:[],
-            optionSauce:[],
             ableToCustomSauce: [
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionCheese:[],
+            optionSauce:[],
         },
         BE:
         {
-            id:7,
+            id:6,
             name: "The Bullseye",
             key: 'BE',
             imageUrl: BullsEye,
             price: 18.90,
             ingredient: 'Prime N.Z. Ribeye steak(200gm) grilled middium, topped with grilled caramelised white onion, your choice of cheese, lettuce, tomato, aioli & tomato relish',
             ableToCustomCheese: [
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
-            optionCheese:[],
-            optionSauce:[],
             ableToCustomSauce: [
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionCheese:[],
+            optionSauce:[],
         },
         CW:
         {
-            id:8,
+            id:7,
             name: 'Chief Wiggum',
             key: 'CW',
             imageUrl: Wiggum,
             price: 14.90,
             ingredient: 'Slow roasted pork belly, lettuce, tomato, red onion, hash brown, aioli & apricot seeded mustard',
             ableToCustomCheese: [
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
-            optionCheese:[],
-            optionSauce:[],
             ableToCustomSauce: [
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionCheese:[],
+            optionSauce:[],
         },
         COD:
         {
-            id:9,
+            id:8,
             name: 'The Codfather',
             key: 'COD',
             imageUrl: COD,
             price: 14.90,
             ingredient: "South Coast Blue Cod, tempura batter, Ferg's dill tartare, lettuce, tomato, aioli & tomato relish",
             ableToCustomCheese: [
-                'select-cheese',
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
-            optionCheese:[],
-            optionSauce:[],
             ableToCustomSauce: [
-                'default',
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionCheese:[],
+            optionSauce:[],
         },
         Tofu:
         {
-            id:10,
+            id:9,
             name: 'Holier Than Thou',
             key: 'Tofu',
             imageUrl: Tofu,
             price: 12.90,
             ingredient: 'Tempura tofu, spicy satay, coconut & coriander sauce, lettuce, tomato, red onion, cucumber, avocado, snowpea shoots & aioli',
             ableToCustomCheese: [
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
-            optionCheese:[],
-            optionSauce:[],
             ableToCustomSauce: [
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionCheese:[],
+            optionSauce:[],
         },
         Lafel:
         {
-            id:11,
+            id:10,
             name: 'Ferg-lafel',
             key: 'Lafel',
             imageUrl: Lafel,
             price: 12.90,
             ingredient: 'Falafel patties dressed with lemon yoghurt & chipotle chilli sauce, lettuce, tomato, red onion, cucumber, avocado & aioli',
             ableToCustomCheese: [
+                'No Cheese',
                 'Cheddar',
                 'Blue',
                 'Brie',
                 'Swiss',
-                'no cheese'
             ],
-            optionCheese:[],
-            optionSauce:[],
             ableToCustomSauce: [
-                'Tomato relish',
+                'Default',
+                'Tomato Relish',
                 'Aioli',
                 'BBQ',
                 'Mango',
                 'Raita',
-                'Sweet chili',
+                'Sweet Chili',
                 'Mastard',
-                'Tomato sauce',
+                'Tomato Sauce',
                 'Tartar',
                 'Taragon',
-                'no-sauce'
+                'No Sauce'
             ],
+            optionCheese:[],
+            optionSauce:[],
         },
         fries:
         {
-                id: 12,
+                id: 11,
                 name: 'Fries + Choise of source',
                 key: 'fries',
                 imageUrl: Fries,
                 price: 4.50,
                 ingredient: 'aioli, wasabi mayonnaise, tomato sauce, BBQ or sweet chilli',
-                ableToCustomCheese: [],
-                optionSauce:[],
-                ableToCustomSauce: [
+                ableToCustomFriesSauce: [
+                    'Tomato Sauce',
                     'Aioli',
-                    'Sweet chili',
-                    'Tomato sauce',
+                    'Wasabi Mayonnaise',
+                    'Sweet Chili',
                     'BBQ',
-                    'no-sauce'
+                    'No-Sauce',
                 ],
+                optionSauce:[],
         },
         Onion:
         {
-                id:13,
-                name: 'Onion rings',
-                key: 'Onion',
-                imageUrl: Onion,
-                price: 7.50,
-                ingredient: 'with aioli',
-                ableToCustomCheese: [],
-                ableToCustomSauce: []
+            id:12,
+            name: 'Onion rings',
+            key: 'Onion',
+            imageUrl: Onion,
+            price: 7.50,
+            ingredient: 'with aioli',
         },
         Squid:
         {
-                id: 14,
-                name: 'salt and pepper squid',
-                key: 'Squid',
-                imageUrl: Squid,
-                price: 9.50,
-                ingredient: 'with wasabi mayonnaise',
-                ableToCustomCheese: [],
-                ableToCustomSauce: []
+            id: 13,
+            name: 'salt and pepper squid',
+            key: 'Squid',
+            imageUrl: Squid,
+            price: 9.50,
+            ingredient: 'with wasabi mayonnaise'
         }
     }
 

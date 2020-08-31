@@ -10,27 +10,28 @@ import './collection-item.styles.scss';
 const CollectionItem = ({ match }) => {
     const collections = useContext(ItemsContext);
     const collectionItem = collections[match.params.itemKey];
-    const { key, imageUrl, name, ingredient, price, ableToCustomSauce, ableToCustomCheese, optionCheese, optionSauce } = collectionItem;
-    const { addItem, cheese, selectedCheese, sauce, selectedSauce } = useContext(CartContext);
+    const { key, imageUrl, name, ingredient, price, ableToCustomSauce, ableToCustomCheese, optionCheese, optionSauce, ableToCustomFriesSauce } = collectionItem;
+    const { addItem, cheese, selectedCheese, sauce, selectedSauce, selectedFriesSauce, friesSauce } = useContext(CartContext);
+
     function pushFunc() {
         optionCheese.push(cheese);
         optionSauce.push(sauce);
         addItem(collectionItem);
     }
     function saucePushFunc(){
-        optionSauce.push(sauce);
+        optionSauce.push(friesSauce);
         addItem(collectionItem);
     }
     function itemPushFunc() {
-        addItem(collectionItem)
+        addItem(collectionItem);
     }
-    let hoverAction;
+    let handleAction;
     if(optionCheese && optionCheese) {
-        hoverAction = pushFunc;
+        handleAction = pushFunc;
     } else if (optionSauce) {
-        hoverAction = saucePushFunc;
+        handleAction = saucePushFunc;
     } else{
-        hoverAction = itemPushFunc;
+        handleAction = itemPushFunc;
     }
     
     return(
@@ -40,29 +41,37 @@ const CollectionItem = ({ match }) => {
                         <h1 className='content'>{name}</h1>
                         <h1 className='price'>{price}NZD</h1>
                         <h3 className='ingredient'>{ingredient}</h3>
-                        <form>
-                            {ableToCustomCheese.length ?
-                                <select onChange={selectedCheese} required >
+                            {ableToCustomCheese ?
+                                <select className='select-item' value={cheese} onChange={selectedCheese} >
                                 {
                                     ableToCustomCheese.map((option, index) => (
-                                    <option key={index}  value={option}>{option}</option>
+                                    <option className='select' key={index}  value={option}>{option}</option>
                                     ))
                                 }
                                 </select>
                                 :''
                             }
-                            {ableToCustomSauce.length ?
-                                <select placeholder='select sauce' onChange={selectedSauce}>
+                            {ableToCustomSauce ?
+                                <select className='select-item' value={sauce} placeholder='select sauce' onChange={selectedSauce}>
                                     {
                                         ableToCustomSauce.map((option, index) => (
-                                        <option key={index} value={option}>{option}</option>
+                                        <option className='select' key={index} value={option}>{option}</option>
                                         ))
                                     }
                                 </select> :
                                 ''
                             }
-                        </form>
-                        <CustomButton isShopping onClick={() => hoverAction(collectionItem)}>Grab me!!</CustomButton>
+                            {
+                               ableToCustomFriesSauce ?
+                                <select className='select-item' placeholder='select sauce' value={friesSauce} onChange={selectedFriesSauce}>
+                                {
+                                    ableToCustomFriesSauce.map((option, index) => (
+                                    <option className='select' key={index} value={option}>{option}</option>
+                                    ))
+                                }
+                                    </select> : ''
+                            }
+                        <CustomButton isShopping onClick={() => handleAction(collectionItem)}>Grab me!!</CustomButton>
                     </div>
                 </div>
             );
