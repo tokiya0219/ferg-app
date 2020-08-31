@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 
-import { addItemToCart, removeItemFromCart, filterItemFromCart, getCartItemCount, getCartItemPrice } from './cart.utils';
+import { addItemToCart, removeItemFromCart, filterItemFromCart, getCartItemCount, getCartItemPrice, getFixedPrice } from './cart.utils';
 
 export const CartContext = createContext({
     cartItems: [],
@@ -37,7 +37,7 @@ const CartProvider = ({ children }) => {
     }, [cartItems]);
 
     useEffect(() => {
-        setTotalPrice(getCartItemPrice(cartItems));
+        setTotalPrice(getFixedPrice(getCartItemPrice(cartItems)));
     }, [cartItems]);
 
 return(

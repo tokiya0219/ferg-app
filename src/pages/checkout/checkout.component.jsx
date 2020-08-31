@@ -9,6 +9,10 @@ import './checkout.styles.scss';
 
 const CheckOut = () => {
     const { cartItems, totalPrice, cartItemsCount } = useContext(CartContext);
+    function checkedOut () {
+        alert('your order has been accepted');
+        window.location.reload(false);
+    }
     return(
         <div className='check-out'>
             <div>
@@ -32,9 +36,12 @@ const CheckOut = () => {
             )}
             <div className='total'>
                 <span className='total-amount'>{cartItemsCount} items</span>
-                <span className='total-price'>Total price is {totalPrice}$</span>
+                <span className='total-price'>{totalPrice}$</span>
             </div>
-            <CustomButton isCheckingout onClick={() => alert('your order has been accepted')}>checkout now</CustomButton>
+            {
+                cartItems.length ?
+            <CustomButton isCheckingout onClick={checkedOut}>checkout now</CustomButton> : ''
+            }
         </div>
     )
 }
