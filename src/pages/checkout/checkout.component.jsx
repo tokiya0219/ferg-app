@@ -19,8 +19,8 @@ const CheckOut = () => {
             <h1 className='title'>CHECKOUT</h1>
             </div>
             <div className='item-list'>
-                <span className='image'>item image</span>
-                <span className='name'>item name</span>
+                <span className='image'>image</span>
+                <span className='name'>name</span>
                 <span className='cheese'>cheese</span>
                 <span className='sauce'>sauce</span>
                 <span className='amount'>amount</span>

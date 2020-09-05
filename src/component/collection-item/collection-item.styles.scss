@@ -3,30 +3,70 @@
     width: 100%;
     .collection{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
-    .image{
-        display: inline-block;
-        height:45vh;
-        max-height: 650px;
-    }
-    .content{
-        font-size:60px;
-    }
-    .price{
-        font-size: 40px;
-    }
-    .ingredient{
-        font-size: 20px;
-        font-family: 'Roboto Slab', serif;
-    }
-    .select-item{
-        width: 100%;
-        height: 40px;
-        margin: 5px 0;
-        font-size: 20px;
+        .image{
+            display: inline-block;
+            height:45vh;
+            max-height: 650px;
+            max-width: 700px;
+            @media screen and (max-width: 768px) {
+                max-height: 300px;
+                max-width: 350px;
+            }
+            @media screen and (max-width: 414px) {
+                max-height: 220px;
+                max-width: 250px;
+            }
+            @media screen and (max-width: 414px) {
+                max-height: 200px;
+                max-width: 230px;
+            }
+        }
+        .content{
+            width:50%;
+            margin-left: auto;
+            margin-right: auto;
+        
+            .name{
+                font-size:60px;
+                @media screen and (max-width: 768px) {
+                    font-size: 40px;
+                }
+                @media screen and (max-width: 414px) {
+                    font-size: 30px;
+                }
+            }
+            .price{
+                font-size: 40px;
+                @media screen and (max-width: 768px) {
+                    font-size: 30px;
+                }
+                @media screen and (max-width: 414px) {
+                    font-size: 20px;
+                }
+            }
+            .ingredient{
+                font-size: 20px;
+                font-family: 'Roboto Slab', serif;
+                @media screen and (max-width: 768px) {
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 414px) {
+                    font-size: 10px;
+                }
+            }
+            .select-item{
+                width: 100%;
+                height: 40px;
+                margin: 5px 0;
+                font-size: 20px;
+                @media screen and (max-width: 760px) {
+                    height: 30px;
+                    font-size: 15px;
+                }
+                @media screen and (max-width: 414px) {
+                    height:25px;
+                }
+            }
+        }
     }
 }

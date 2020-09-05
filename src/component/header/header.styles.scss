@@ -4,10 +4,36 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    @media screen and (max-width: 540px) {
+
+    }
+    @media screen and (max-width: 425px) {
+        height: 45px
+    }
+    @media screen and (max-width: 375px) {
+        height: 40px;
+    }
+    @media screen and (max-width: 320px) {
+        height: 20px;
+    }
 }
 .logo-container{
     font-size: 50px;
     font-weight: bold;
+
+    @media screen and (max-width: 540px) {
+        font-size: 40px;
+    }
+    @media screen and (max-width: 425px) {
+        font-size: 35px;
+    }
+    @media screen and (max-width: 375px) {
+        font-size: 30px;
+    }
+    
+    @media screen and (max-width: 320px) {
+        font-size: 20px;
+    }
 }
 
 .option-container{
@@ -19,4 +45,20 @@
 .option{
     font-size: 45px;
     padding: 10px 20px;
+    @media screen and (max-width: 540px) {
+        font-size: 40px;
+    }
+    @media screen and (max-width: 425px) {
+        font-size: 35px;
+        padding: 0;
+        margin-left: 15px;
+    }
+    @media screen and (max-width:375px) {
+        font-size:30px;
+        padding: 0;
+        margin-left: 10px;
+    }
+    @media screen and (max-width:320px) {
+        font-size: 20px;
+    }
 }

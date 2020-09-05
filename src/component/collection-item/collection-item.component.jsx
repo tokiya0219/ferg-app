@@ -38,40 +38,42 @@ const CollectionItem = ({ match }) => {
                 <div className='collection-item' key={key}>
                     <div className='collection'>
                         <img className='image' alt='' src={`${imageUrl}`}></img>
-                        <h1 className='content'>{name}</h1>
-                        <h1 className='price'>{price}NZD</h1>
-                        <h3 className='ingredient'>{ingredient}</h3>
-                            {ableToCustomCheese ?
-                                <select className='select-item' value={cheese} onChange={selectedCheese} >
-                                {
-                                    ableToCustomCheese.map((option, index) => (
-                                    <option className='select' key={index}  value={option}>{option}</option>
-                                    ))
-                                }
-                                </select>
-                                :''
-                            }
-                            {ableToCustomSauce ?
-                                <select className='select-item' value={sauce} placeholder='select sauce' onChange={selectedSauce}>
+                        <div className='content'>
+                            <h1 className='name'>{name}</h1>
+                            <h1 className='price'>{price}NZD</h1>
+                            <h3 className='ingredient'>{ingredient}</h3>
+                                {ableToCustomCheese ?
+                                    <select className='select-item' value={cheese} onChange={selectedCheese} >
                                     {
-                                        ableToCustomSauce.map((option, index) => (
+                                        ableToCustomCheese.map((option, index) => (
+                                        <option className='select' key={index}  value={option}>{option}</option>
+                                        ))
+                                    }
+                                    </select>
+                                    :''
+                                }
+                                {ableToCustomSauce ?
+                                    <select className='select-item' value={sauce} placeholder='select sauce' onChange={selectedSauce}>
+                                        {
+                                            ableToCustomSauce.map((option, index) => (
+                                            <option className='select' key={index} value={option}>{option}</option>
+                                            ))
+                                        }
+                                    </select> :
+                                    ''
+                                }
+                                {
+                                ableToCustomFriesSauce ?
+                                    <select className='select-item' placeholder='select sauce' value={friesSauce} onChange={selectedFriesSauce}>
+                                    {
+                                        ableToCustomFriesSauce.map((option, index) => (
                                         <option className='select' key={index} value={option}>{option}</option>
                                         ))
                                     }
-                                </select> :
-                                ''
-                            }
-                            {
-                               ableToCustomFriesSauce ?
-                                <select className='select-item' placeholder='select sauce' value={friesSauce} onChange={selectedFriesSauce}>
-                                {
-                                    ableToCustomFriesSauce.map((option, index) => (
-                                    <option className='select' key={index} value={option}>{option}</option>
-                                    ))
+                                        </select> : ''
                                 }
-                                    </select> : ''
-                            }
-                        <CustomButton isShopping onClick={() => handleAction(collectionItem)}>Grab me!!</CustomButton>
+                            <CustomButton isShopping onClick={() => handleAction(collectionItem)}>Grab me!!</CustomButton>
+                        </div>
                     </div>
                 </div>
             );

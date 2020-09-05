@@ -11,7 +11,7 @@ const Ferg = () => {
             <h1 className='title'>ABOUT US</h1>
             {
                 info.lists.map(info => (
-                    <div className='list' key={info.string}>
+                    <div className='list' key={info.id}>
                     <h2 className='list-item' id={info.id} > {info.title} </h2>
                     <span className='description'>{info.description}</span>
                     </div>
