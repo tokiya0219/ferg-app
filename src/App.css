@@ -1,23 +1,12 @@
 body {
   font-family: 'Alex Brush', cursive;
-  padding: 20px 40px;
+  padding: 0;
+  margin: 3%;
+  box-sizing: border-box;
+  background-color: #fff;
+  min-height: 100vh;
 }
-@media screen and (max-width: 540px) {
-  body {
-    padding: 10px 20px; 
-  }
-}
-@media screen and (max-width: 320px) {
-  body {
-    padding: 5px 10px;
-  }
-}
-
 a {
   text-decoration: none;
-  color: black;
-}
-
-* {
-  box-sizing: border-box;
+  color: #000;
 }

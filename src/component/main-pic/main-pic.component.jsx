@@ -9,7 +9,6 @@ const MainPic = () => {
             </div>
         </div>
     );
-    }
-
+}
 
 export default MainPic;

@@ -105,6 +105,16 @@
         margin-left: auto;
         width:15%;
         overflow: auto;
+        &::-webkit-scrollbar {
+            width: 8px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: rgb(179, 178, 178); 
+            border-radius: 15px;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background: rgb(129, 122, 122);
+          }
         @media screen and (max-width: 1250px) {
             margin-top: 60px;
         }

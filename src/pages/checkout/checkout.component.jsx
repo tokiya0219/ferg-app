@@ -39,8 +39,8 @@ const CheckOut = () => {
                 <span className='total-price'>{totalPrice}$</span>
             </div>
             {
-                cartItems.length ?
-            <CustomButton isCheckingout onClick={checkedOut}>checkout now</CustomButton> : ''
+            cartItems.length ?
+                <CustomButton isCheckingout onClick={checkedOut}>checkout now</CustomButton>: ''
             }
         </div>
     )

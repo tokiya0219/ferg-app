@@ -12,13 +12,13 @@ import CheckOut from './pages/checkout/checkout.component';
 function App() {
   return (
     <div>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route exact path='/menu' component={MenuPage} />
-        <Route path='/menu/:itemKey' component={CollectionItem} />
-        <Route path='/checkout' component={CheckOut} />
-      </Switch>
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/menu' component={MenuPage} />
+          <Route path='/menu/:itemKey' component={CollectionItem} />
+          <Route path='/checkout' component={CheckOut} />
+        </Switch>
     </div>
   );
 }
