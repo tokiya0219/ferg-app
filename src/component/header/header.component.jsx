@@ -8,15 +8,18 @@ const Header = () => {
         <div className='header'>
             <div className='logo-container'>
                 <Link className='logo' to='/'>
-                    ferg burger
+                    Ferg Burger
                 </Link>
             </div>
             <div className='options-container'>
                 <Link className='option' to='/menu'>
-                    menu
+                    Menu
+                </Link>
+                <Link className="option" to='/sign in'>
+                    Sign in
                 </Link>
                 <Link className='option' to='/checkout'>
-                    checkout
+                    Checkout
                 </Link>
             </div>
         </div>

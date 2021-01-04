@@ -4,46 +4,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
-    position: relative;
     display: flex;
     width:100%;
+    align-items: center;
 
     .header{
-        font-size: 200px;
-        text-align: center;
-        display: block;
-        position: relative;
+        font-size: 8rem;
+        justify-content: center;
         color: white;
-        margin-top: 15vh;
-
-        @media screen and (max-width: 1300px) {
-            font-size: 120px;
-            margin-top: 17vh;
+        @media screen and (max-width: 1000px) {
+            font-size: 6rem;
         }
-        @media screen and (max-width: 768px) {
-            font-size: 100px;
-            margin-top: 20vh;
+        @media screen and (max-width: 600px) {
+            font-size: 4rem;
         }
-
-        @media screen and (max-width: 630px) {
-            font-size: 75px;
-            margin-top: 22vh;
-        }
- 
-        @media screen and (max-width: 460px) {
-            font-size: 55px;
-            margin-top: 25vh;
-        }
-        
-        @media screen and (max-width: 375px) {
-            font-size: 50px;
-            margin-top: 20vh;
-        }
-        
-        @media screen and (max-width: 320px) {
-            font-size: 40px;
-            margin-top: 20vh;
+        @media screen and (max-width: 400px) {
+            font-size: 3rem;
         }
     }
-    
 }
