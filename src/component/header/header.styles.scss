@@ -1,30 +1,32 @@
 .header{
-    height: 70px;
+    height: 50px;
     width: 100%;
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     flex-wrap: wrap;
     font-size: 30px;
 
     @media screen and (max-width: 540px) {
         font-size: 20px;
-        height: 50px;
-    }
-    @media screen and (max-width: 425px) {
-        height: 45px;
+        height: 30px;
     }
     @media screen and (max-width: 375px) {
         font-size: 15px;
-        height: 40px;
-    }
-    @media screen and (max-width: 320px) {
         height: 20px;
     }
 }
 .logo-container{
     font-weight: bold;
     flex-grow: 1;
+    .logo{
+        &:hover{
+        filter: drop-shadow(0 5px 4px rgb(10, 0, 30));
+    }
+}
 }
 .option{
-    padding: 0px 5px;
+    padding: 0px 0 0 15px ;
+    &:hover{
+        filter: drop-shadow(0 5px 4px rgb(10, 0, 30));
+    }
 }
