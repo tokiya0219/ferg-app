@@ -1,5 +1,3 @@
-
-
 import React, {useContext} from 'react';
 
 import { CartContext } from '../../provider/cart-provider/cart-provider';
