@@ -4,15 +4,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
-    display: flex;
     width:100%;
     align-items: center;
-
+    display: flex;
     .header{
         font-size: 8rem;
+        color: white;
         margin-bottom: 10vh;
         justify-content: center;
-        color: white;
+        animation-name: slide-in-to-top;
+        animation-duration: 1.5s;
         @media screen and (max-width: 1024px) {
             font-size: 6rem;
         }

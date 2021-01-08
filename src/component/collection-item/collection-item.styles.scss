@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    animation: slide-in-to-top 2s;
     .collection{
         // display: block;
         .image{

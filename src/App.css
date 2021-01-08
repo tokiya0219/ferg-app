@@ -10,3 +10,55 @@ a {
   text-decoration: none;
   color: #000;
 }
+
+/* ALL OF ANIMATIONS ARE HERE */
+@keyframes slide-in-to-left {
+  from {
+      padding-left: 500%;
+  }
+  to {
+      padding-left: 0%;
+  }
+}
+
+@keyframes slide-slightly-to-top {
+  from{
+      padding-top: 10%;
+  }
+  to{
+      padding-top: 0%;
+  }
+}
+
+@keyframes slide-in-to-top {
+  from {
+      padding-top: 300%;
+  }
+  to {
+      padding-top:0%;
+  }
+}
+
+@keyframes up-down {
+  from{
+      padding-top: 1%;
+  }
+  50%{
+      padding-top: 0%;
+  }
+  to{
+      padding-top: 1%;
+  }
+}
+
+@keyframes floating {
+  from {
+      filter: blur(0);
+  }
+  50% {
+      filter: blur(.2rem);
+  }
+  to {
+      filter: blur(2rem);
+  }
+}
