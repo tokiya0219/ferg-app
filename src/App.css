@@ -14,10 +14,10 @@ a {
 /* ALL OF ANIMATIONS ARE HERE */
 @keyframes slide-in-to-left {
   from {
-      padding-left: 500%;
+      left: 500%;
   }
   to {
-      padding-left: 0%;
+      left: 0%;
   }
 }
 
@@ -41,13 +41,13 @@ a {
 
 @keyframes up-down {
   from{
-      padding-top: 1%;
+    transform: translateY(10px);
   }
   50%{
-      padding-top: 0%;
+    transform: translateY(0px);
   }
   to{
-      padding-top: 1%;
+    transform: translateY(10px);
   }
 }
 

@@ -8,6 +8,7 @@
 }
 .list{
     width: 75%;
+    position: relative;
     animation-name: slide-in-to-left;
     animation-duration: 3s;
 }
@@ -15,7 +16,6 @@
 .list-item{
     border-bottom: 1px dotted rgba(10, 10, 10, .3);
     font-size: 30px;
-    animation-duration: 2.5s;
     @media screen and (max-width:540px) {
         font-size: 15px;
     }
